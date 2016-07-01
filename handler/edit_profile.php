@@ -19,7 +19,10 @@
         }
         else
         {
-            fileExists(&$TARGET_PATH, &$imageName, $imgPath);
+            if (file_exists($TARGET_PATH))
+	        {      
+                changeNameFile(&$TARGET_PATH, &$imageName, $imgPath);
+	        }
             uploadImage($image['tmp_name'], $TARGET_PATH);     
             $_SESSION['user']['photo_big'] = $imageName;
         }
