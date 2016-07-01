@@ -1,5 +1,5 @@
 <?php
-	session_start();
+    session_start();
     require_once('../include/common.inc.php');
     require_once '../lib/Smarty.class.php';
     dbInitialConnect(); //Соединение с бд	
@@ -14,9 +14,9 @@
     $imgPath = TARGET_IMG_ANSWER_PATH;
     $image = $_FILES['image'];
     $imageName = dbQuote($image['name']);
-	$TARGET_PATH = $imgPath.$imageName;
+    $TARGET_PATH = $imgPath.$imageName;
 
-	if(!empty($text) && ((empty($imageName)) || (is_valid_type($image))))
+    if(!empty($text) && ((empty($imageName)) || (is_valid_type($image))))
     {
         if (!empty($imageName))
         {   
