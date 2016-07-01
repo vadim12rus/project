@@ -1,0 +1,20 @@
+<div class="content">   
+  <div class="left_block_content">
+    <div>
+      <img class="avatar img-avatar" src="/upload/avatar/{$post.avatar}">
+      <div class="text_task"> 
+        <div>
+          <a href="/id{$post.user_id}">
+            <span class="autor">{$post.name}</span>
+          </a>
+          <span class="date joint_item fl_right">{$date}</span>
+        </div>
+        <i class="pointer"></i>
+        <p>{$post.task_text}</p><br>
+        {if $post.image }
+        <a href="/upload/question/{$post.image}" class="link_image"><img src="/upload/question/{$post.image}" class="attach_image_task"></a><br>
+        {/if}
+        <span class="joint_item">{$post.item}</span>
+        <span class="joint_item">{$post.class} класс</span> 
+      </div>
+    </div>   

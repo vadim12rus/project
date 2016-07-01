@@ -1,0 +1,30 @@
+<div class="answer_task">
+  <h2>ОТВЕТЫ</h2>
+  <div id="content_answer">
+  {section name=i loop=$answer|@count} 
+    <div class="answer_item">
+      <div style="float: left; margin-right: 15px;">
+        <img class="img-avatar" style="display: inline-block;" src="/upload/avatar/{$answer[i].avatar}"><br>
+        <a href="/id{$answer[i].user_id}">
+          <span class="autor" style="display: block;text-align: center;">{$answer[i].name}</span>
+        </a>
+      </div>
+      <p class="answer_text">{$answer[i].answer_text}</p><br>  
+      {if $answer[i].image}              
+        <a href="/upload/answer/{$answer[i].image}">
+          <img src="/upload/answer/{$answer[i].image}" style="max-width: 67%; max-height:500px; margin-top: 15px;">
+        </a>  
+      {/if}             
+       <div style="clear: both"></div>            
+    </div>                    
+    <div style="background-color: #40a5ed; height: 1px;"></div>
+    {/section}
+    {if $answer|@count == 0}
+      <p class="answerIsNo">На эту задачу, еще нет ответа!</p>
+    {/if}               
+   
+  </div>
+</div>
+</div>
+                  
+                  

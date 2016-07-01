@@ -1,0 +1,23 @@
+<div>
+  <h2 class="const_font" style="text-align: center;">Ответы пользователя «{$user.name} {$user.last_name}» </h2> 
+ {section name=i loop=$userAnswer|@count} 
+  <div class="min_task" style="width: 70%; margin: 0 auto;">        
+    <div class="text_task" style="margin-left: 0; margin-bottom:20px;">          
+      <div>           
+        <a href="/task.php?id={$userAnswer[i].task_id}">             
+          <span class="autor">Ссылка на задачу</span>           
+        </a>          
+        <span class="date joint_item fl_right date">{$userAnswer[i].date}</span>          
+      </div>          
+      <p>{$userAnswer[i].answer_text}</p>
+      {if $userAnswer[i].image}              
+        <a href="/upload/answer/{$userAnswer[i].image}">
+          <img src="/upload/answer/{$userAnswer[i].image}" style="max-width: 20%; max-height:500px; margin-top: 5px;">
+        </a><br>  
+      {/if}        
+      <span class="joint_item">{$userAnswer[i].item}</span>          
+      <span class="joint_item">{$userAnswer[i].class} класс</span>
+    </div>     
+  </div>
+ {/section} 
+</div>
