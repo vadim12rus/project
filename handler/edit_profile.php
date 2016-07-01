@@ -10,7 +10,7 @@
     $imgPath = PATH_IMG_AVATAR;
     $image = $_FILES['SettingsAvatar'];
     $imageName = dbQuote($image['name']);
-	$TARGET_PATH = $imgPath.$imageName;
+    $TARGET_PATH = $imgPath.$imageName;
     if ((empty($imageName) || is_valid_type($image)) && !(empty($name) || empty($lastname)))
     {
         if (empty($imageName))
