@@ -20,7 +20,10 @@
     {
         if (!empty($imageName))
         {   
-            fileExists(&$TARGET_PATH, &$imageName, $imgPath);
+            if (file_exists($TARGET_PATH))
+	    {      
+                changeNameFile(&$TARGET_PATH, &$imageName, $imgPath);
+            }
             uploadImage($image['tmp_name'], $TARGET_PATH);     
         }  	 
       
