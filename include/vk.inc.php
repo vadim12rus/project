@@ -36,5 +36,3 @@
         $userInfo = json_decode(file_get_contents('https://api.vk.com/method/users.get' . '?' . urldecode(http_build_query($params))), true);
         return $userInfo['response'][0];     
     }
-
-?>
