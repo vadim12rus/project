@@ -14,6 +14,6 @@
     define('AMOUNT_DATA_ON_PAGE',  '7');
     define('AMOUNT_DATA_ON_RIGHT_BLOCK',  '4');
     define('ROOT_PAGE',  'http://co35515.tmweb.ru/');
-    define('TARGET_IMG_ANSWER_PATH',  '../upload/answer/'); 
-    define('IMG_QUESTION_PATH',  '../upload/question/'); 
+    define('PATH_IMG_ANSWER',  '../upload/answer/'); 
+    define('PATH_IMG_QUESTION',  '../upload/question/'); 
     define('PATH_IMG_AVATAR',  '../upload/avatar/'); 
