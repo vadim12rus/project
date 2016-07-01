@@ -8,7 +8,7 @@
     $text = dbQuote(removeTheTags($_POST['text'])); 
     $today = date("Y-m-d H:i"); 
 
-    $imgPath = IMG_QUESTION_PATH;
+    $imgPath = PATH_IMG_QUESTION;
     $image = $_FILES['image'];
     $imageName = dbQuote($image['name']);
     $TARGET_PATH = $imgPath.$imageName;
