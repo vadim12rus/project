@@ -14,6 +14,7 @@
     {
         global $g_dbLink;
         $result = mysqli_query($g_dbLink, $query);
+        
         return ($result !== false);    
     }
     
