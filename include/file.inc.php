@@ -17,11 +17,8 @@
         move_uploaded_file($temporaryFolder, $TARGET_PATH);
     }
   
-    function fileExists(&$TARGET_PATH, &$fileName, $imgPath)
+    function changeNameFile(&$TARGET_PATH, &$fileName, $imgPath)
     {
-        if (file_exists($TARGET_PATH))
-	{      
-            $fileName = date("YmdHi").$fileName;
-            $TARGET_PATH = $imgPath.$fileName;
-	}
+        $fileName = date("YmdHi").$fileName;
+        $TARGET_PATH = $imgPath.$fileName;
     }
