@@ -1,5 +1,5 @@
 <?php
-	session_start();
+    session_start();
     require_once('../include/common.inc.php');
     dbInitialConnect(); //Соединение с бд	
 
@@ -13,7 +13,7 @@
     $imageName = dbQuote($image['name']);
     $TARGET_PATH = $imgPath.$imageName;
 
-	if(!haveIsEmptyData($class, $predmet, $text))
+    if(!haveIsEmptyData($class, $predmet, $text))
     {   
         if ((empty($imageName)) || (is_valid_type($image)))
         {  
@@ -36,6 +36,3 @@
     {
          echo '<h3 align="center">Обязательные поля КЛАСС, ПРЕДМЕТ, ВОПРОС!</h3>';
     }
-
-
-?>
