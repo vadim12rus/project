@@ -11,7 +11,7 @@
     $autro_id = $_SESSION['user']['user_id'];
     $today = date("Y-m-d H:i"); 
 
-    $imgPath = TARGET_IMG_ANSWER_PATH;
+    $imgPath = PATH_IMG_ANSWER;
     $image = $_FILES['image'];
     $imageName = dbQuote($image['name']);
     $TARGET_PATH = $imgPath.$imageName;
