@@ -678,6 +678,15 @@ h1
     cursor: pointer;
     font-size: 14px;
 }
+
+.answer_image
+{
+    max-width: 67%; 
+    max-height:500px; 
+    margin-top: 15px;
+}
+
+}
 @media screen and (min-width:80px) and (max-width: 920px) 
 {
     .menu_item
